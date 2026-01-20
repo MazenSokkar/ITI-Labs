@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./background.png);
+    background-repeat: repeat;
+}
+
+.content{
+    background-color: white;
+    border: 20px;
+    border-style: ridge;
+    width: 50%;
+    padding: 50px;
+    margin: 50px auto;
+}
+
+.content-header{
+    background-color: #FFBDAD;
+    text-align: center;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    margin: 20px;
+}
+
+.content-header p{
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.content-header img{
+    padding: 30px 0;
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content-links{
+    background-color: #FFBDAD;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    margin: 20px;
+}
+
+.content-links a{
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    color: red;
+}
+
+.main-content{
+    background-color: #FFBDAD;
+    padding: 20px 100px;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    margin: 20px;
+}
+
+.main-content h2{
+    text-decoration: underline;
+}
+
+.main-content p{
+    font-style: italic;
+}
+
+.main-content span{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-content ul{
+    list-style-image: url(./calc.png);
+}
+
+.main-content ul li{
+    text-decoration: underline;
+    color: red;
+    font-size: 20px;
+}
+
+.content-footer {
+    background-color: #FFBDAD;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}

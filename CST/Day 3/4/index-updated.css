@@ -1,0 +1,92 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    align-content: center !important;
+}
+
+.content-header {
+    border-bottom: 3px dotted;
+    align-items: center;
+    justify-items: center;
+    margin: 0 0 5px 0;
+}
+
+.content-header h1{
+    color: darkgreen;
+    font-size: 28px;
+    text-shadow: 2px 2px red;
+    margin: 5px 0;
+}
+
+.content-header p{
+    align-items: center;
+    color: green;
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.content-header span{
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+}
+
+.main-content {
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 3px dotted;
+}
+
+.birds {
+    margin: 5px 10px;
+    width: 250px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.birds img{
+    width: 180px;
+    height: 140px;
+    margin: 5px;
+}
+
+.birds h4{
+    color: brown;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 3px 0;
+}
+
+.birds p{
+    margin: 0;
+    font-size: 10px;
+    color: green;
+    text-align: center;
+}
+
+.content-footer {
+    justify-items: center;
+    font-style: italic;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+.content-footer h2{
+    color: green;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.content-footer p{
+    font-size: 14px;
+    color: brown;
+    font-weight: bold;
+    margin: 5px 0;
+}
