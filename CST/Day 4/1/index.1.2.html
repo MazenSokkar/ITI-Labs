@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Task 1.2</title>
+
+    <script>
+        var input = "";
+        var result = 0;
+        var tempResult = 0;
+        input = prompt("enter your number. enter 0 to see the result.")
+        while (isNaN(parseInt(input)) === false) {
+            if (parseInt(input) === 0) {
+                alert("Sum = " + result);
+                break;
+            } else {
+                tempResult = result;
+                if ((tempResult += parseInt(input)) < 100) {
+                    result += parseInt(input);
+                    input = prompt("enter your number. enter 0 to see the result.")
+                } else {
+                    alert("the value you entered makes the sum > 100. last sum value was " + result);
+                    break;
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

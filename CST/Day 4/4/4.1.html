@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>
+        Task 4.1
+    </title>
+
+    <script>
+        var user_number = 0;
+        var user_num_input = '';
+        do {
+            user_num_input = prompt("Enter User Number");
+            user_number = user_num_input;
+        } while (isNaN(parseInt(user_num_input)) === true);
+
+        var intial_rad = 0;
+        var intial_rad_input = '';
+        do {
+            intial_rad_input = prompt("Enter Intial Rad");
+            intial_rad = intial_rad_input;
+        } while (isNaN(parseInt(intial_rad_input)) === true);
+
+        var final_rad = 0;
+        var final_rad_input = '';
+        do {
+            final_rad_input = prompt("Enter final Rad");
+            final_rad = final_rad_input;
+        } while (isNaN(parseInt(final_rad_input)) === true);
+
+        var to_intial = parseInt(user_number, intial_rad);
+
+        var to_target = to_intial.toString(final_rad);
+
+        alert("Output is " + to_target);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
