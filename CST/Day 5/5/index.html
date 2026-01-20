@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Task 5</title>
+
+    <script>
+        var name = "";
+        var mobile = "";
+        do {
+            name = prompt("Enter your name")
+            function ValidateName(n) {
+                var chars = 'abcdefghijklmnopqrstuvwxyz';
+                var nameArr = n.split("");
+                function validateValidChar(arr, char) {
+                    return arr.includes(char.toLowerCase());
+                };
+                var resultNameArr = []
+                nameArr.forEach(function (val) { if (validateValidChar(chars, val) === true) resultNameArr.push(val) });
+                if (resultNameArr.length === nameArr.length) {
+                    return true;
+                } else {
+                    return false
+                }
+            }
+            console.log(name);
+        } while (name === 'null' || ValidateName(name) === false);
+
+        var validStart = ["010", "011", "015", "012"];
+
+        function getStart(mobile) {
+            return mobile.slice(0, mobile.indexOf('-'));
+        }
+
+        function isMobileValid(m) {
+            if (m.indexOf("-") === 3 && m.length === 11 && validStart.some(getStart)) {
+                return true;
+            }
+            return false
+        }
+
+        do {
+            mobile = prompt("Enter Mobile Number in this format XXX-XXXXXX")
+            console.log(mobile)
+        } while (!isMobileValid(mobile));
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

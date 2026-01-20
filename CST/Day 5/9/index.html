@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>
+        Task 9
+    </title>
+
+    <script>
+        var arr = ["ahmed", "ali", "moustafa", "ibrahim", "alaa", "hamada"];
+        var chars = 'abcdefghijklmnopqrstuvwxyz';
+        function generateName(len) {
+            var nameArr = [];
+            for (let i = 0; i < len; i++) {
+                nameArr.push(chars.charAt(Math.floor(Math.random() * chars.length)));
+            }
+            return nameArr.join("");
+        }
+
+        arr.push(generateName(5));
+        arr.push(generateName(7));
+
+        console.log(arr);
+    </script>
+</head>
+
+</html>

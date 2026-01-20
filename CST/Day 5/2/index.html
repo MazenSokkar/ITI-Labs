@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Task 2</title>
+
+    <script>
+        var input = prompt("Enter array values");
+        var repeatvalues = [];
+        var inputArr = [];
+        numberedArr = [];
+        if (input != null) {
+            inputArr = input.split(",");
+            inputArr.forEach(
+                function (val) {
+                    if (isNaN(Number(val)))
+                        alert("enter valid numbers")
+                    else
+                        numberedArr.push(Number(val));
+                }
+            );
+            document.write('<table style="border: 2px solid red"> <tr><th>Values</th></tr>');
+            numberedArr.forEach(function (val) {
+                document.write("<tr><td>" + val + "</td></tr>");
+            })
+            for (let i = 0; i < numberedArr.length; i++) {
+                for (let j = i + 1; j < numberedArr.length; j++) {
+                    if (numberedArr[i] === numberedArr[j]) {
+                        repeatvalues.push({ value: numberedArr[j], index: j });
+                    }
+                }
+            }
+            document.write("</table>");
+            repeatvalues.forEach(
+                function (val) {
+                    document.write("number " + val.value + " repreated in row " + (val.index + 2) + "<br>");
+                }
+            );
+        }
+        else {
+            alert("please reload and enter values and press ok");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

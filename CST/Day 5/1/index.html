@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Task 1</title>
+
+    <script>
+        var input = prompt("Enter array values");
+        if (input != null) {
+            var inputArr = input.split(",");
+            function validateInput(arr) {
+                for (let i = 0; i < arr.length; i++) {
+                    if (isNaN(Number(arr[i])) === true) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            if (validateInput(inputArr) === false) {
+                alert("Input Array is " + inputArr);
+                console.log(inputArr);
+            } else {
+                alert("please reload and enter values and press ok");
+            }
+        }
+        else {
+            alert("please reload and enter values and press ok");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Task 7</title>
+
+    <script>
+        function convertToPascalCase(str) {
+            return str.split(" ").map(
+                function (val) {
+                    if (val.length === 0) return "";
+                    return val[0].toUpperCase() + val.slice(1).toLowerCase();
+                }
+            ).join(" ");
+        }
+
+        function ValidateName(n) {
+            var chars = 'abcdefghijklmnopqrstuvwxyz ';
+            var nameArr = n.split("");
+            function validateValidChar(arr, char) {
+                return arr.includes(char.toLowerCase());
+            };
+            var resultNameArr = []
+            nameArr.forEach(function (val) { if (validateValidChar(chars, val) === true) resultNameArr.push(val) });
+            if (resultNameArr.length === nameArr.length) {
+                return true;
+            } else {
+                return false
+            }
+        }
+        do {
+            var input = prompt("Enter your name");
+            if (ValidateName(input) === true) {
+
+                console.log(convertToPascalCase(input));
+            }
+        } while ((input === null && input.trim() != "") || ValidateName(input) === false);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

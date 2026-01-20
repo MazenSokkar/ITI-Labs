@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Task 6</title>
+
+    <script>
+        var headers = ["ST1", "ST2", "ST3", " "];
+        var grades_1 = [1, 2, 3];
+        var grades_2 = [4, 5, 6];
+        var two_d_array = [grades_1, grades_2]
+
+        document.write('<table style="border: 2px solid yellow;"><tr>');
+        headers.forEach(function (val) {
+            document.write('<td width="30" style="border: 2px solid yellow;">' + val + "</td>");
+        });
+        document.write('</tr>');
+
+        two_d_array.forEach(
+            function (val) {
+                document.write("<tr>");
+                val.forEach(
+                    function (_val) {
+                        document.write('<td width="30" style="border: 2px solid yellow;">' + _val + "</td>");
+                    }
+                )
+                document.write('<td width="30" style="border: 2px solid yellow;">' + val.reduce(function (total, current) {
+                    return total + current;
+                }, 0) + "</td>");
+                document.write('</tr>');
+            }
+        );
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

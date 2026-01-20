@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>Task 8</title>
+
+    <script>
+        var input = [];
+        var numberedInput = [];
+        input = prompt("enter an array of numbers with ',' seperator");
+        if (input != null && input.trim() != "") {
+            function validateInput(inputStr) {
+                var temparr = inputStr.split(",");
+                var result = [];
+                for (let i = 0; i < temparr.length; i++) {
+                    if (isNaN(Number(temparr[i])) === false) {
+                        result.push(Number(temparr[i]));
+                    } else {
+                        input = prompt("please enter only numbers");
+                    }
+                }
+                return result;
+            }
+
+            numberedInput = validateInput(input);
+
+            var ask = '';
+            function askcontinue() {
+                function ValidateAskAnswer(n) {
+                    var nameArr = n.split("");
+                    if (nameArr.includes("y") || nameArr.includes("n")) {
+                        return n;
+                    } else {
+                        return false;
+                    }
+                }
+                ask = prompt("do y want to continue? y/n");
+                if (ValidateAskAnswer(ask.toLowerCase()) != false) {
+                    return ask.toLowerCase();
+                }
+            }
+
+
+            do {
+                var charInput = prompt("enter one of these chars to do an action (a,b,c,d,e,f,g,h)");
+                if (charInput != null && charInput != "") {
+                    var validChars = ["a", "b", "c", "d", "e", "f", "g", "h"];
+                    function validateValidChar(arr, char) {
+                        return arr.some(function (val) {
+                            return char.toLowerCase() === val;
+                        });
+                    }
+                    function validateChar(charStr) {
+                        if (charStr.length != 1) {
+                            charInput = prompt("please enter one char");
+                        } else if (validateValidChar(validChars, charStr) === false) {
+                            charInput = prompt("enter one of these chars to do an action (a,b,c,d,e,f,g,h)");
+                        } else {
+                            return true;
+                        }
+                    }
+                    if (validateChar(charInput) === true) {
+                        switch (charInput.toLowerCase()) {
+                            case "a":
+                                console.log(numberedInput);
+                                break;
+                            case "b":
+                                console.log(numberedInput.sort(function (a, b) { return a - b; }));
+                                break;
+                            case "c":
+                                console.log(numberedInput.sort(function (a, b) { return b - a; }));
+                                break;
+                            case "d":
+                                console.log(numberedInput.reverse());
+                                break;
+                            case "e":
+                                var evenArr = [];
+                                numberedInput.map(function (val) { if (val % 2 === 0) evenArr.push(val); })
+                                if (evenArr.length > 0) {
+                                    console.log(evenArr);
+                                } else {
+                                    alert("There is no even numbers");
+                                }
+                                break;
+                            case "f":
+                                var divNum = prompt("Enter Div Number");
+                                var validatedDivArr = validateInput(divNum);
+                                if (validatedDivArr.length === 1) {
+                                    var divResult = [];
+                                    numberedInput.filter(function (val) {
+                                        if (val % validatedDivArr[0] === 0) {
+                                            divResult.push(val);
+                                        }
+                                        return true;
+                                    });
+                                    if (divResult.length > 0) {
+                                        console.log(divResult);
+                                        askcontinue();
+                                    } else {
+                                        alert("There is no result");
+                                    }
+                                } else {
+                                    divNum = prompt("Enter Valid 1 Number")
+                                }
+                                break;
+                            case "g":
+                                console.log(numberedInput.map(function (val) {
+                                    return val * 0.7;
+                                }));
+                                break;
+                            case "h":
+                                console.log(numberedInput.join("***"));
+                                break;
+                            default:
+                                charInput = prompt("enter one of these chars to do an action (a,b,c,d,e,f,g,h)");
+                                break;
+                        }
+                    }
+                } else {
+                    charInput = prompt("enter one of these chars to do an action (a,b,c,d,e,f,g,h)");
+                }
+            } while (askcontinue() === 'y');
+        } else {
+            input = prompt("please enter your numbers");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
