@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>form 2</title>
+	</head>
+	<body>
+		<table cellpadding="6" cellspacing="6" border="2">
+			<thead>
+				<tr>
+					<th colspan="2">Reg Form</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>UserName</td>
+					<td>
+						<input type="text" name="usename">
+					</td>
+				</tr>
+				<tr>
+					<td>UserPass</td>
+					<td>
+						<input type="password" name="usepass">
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Gender</td>
+					<td>
+						<input type="radio" name="male" value="m" checked> Male
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="female" value="f"> Female
+					</td>
+				</tr>
+				<tr>
+					<td>University</td>
+					<td>
+						<select name="university">
+							<option value="man" selected>Mansoura</option>
+							<option value="tan">Tanta</option>
+							<option value="tan">Tanta</option>
+							<option value="tan">Tanta</option>
+							<option value="tan">Tanta</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Cources</td>
+					<td>
+						<select name="courses" multiple>
+							<option value="h" selected>HTML</option>
+							<option value="c" selected>CSS</option>
+							<option value="x">XML</option>
+							<option value="c">C#</option>
+							<option value="net">.NET</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>CV</td>
+					<td>
+						<input type="file" name="cv">
+					</td>
+				</tr>
+				<tr>
+					<td>Class</td>
+					<td>
+						<input type="radio" name="classa" value="a"> Class A<br>
+						<input type="radio" name="classb" value="b"> Class B<br>
+						<input type="radio" name="classc" value="c" checked> Class C
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">Interests</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<table border="2" width="100%">
+							<tr>
+								<td>
+									<input type="checkbox" name="football" checked>
+								</td>
+								<td>Football</td>
+								<td>
+									<input type="checkbox" name="swimming">
+								</td>
+								<td>Swimming</td>
+								<td>
+									<input type="checkbox" name="running">
+								</td>
+								<td>Running</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="coding" checked>
+								</td>
+								<td>Coding</td>
+								<td>
+									<input type="checkbox" name="design">
+								</td>
+								<td>Design</td>
+								<td>
+									<input type="checkbox" name="writing" checked>
+								</td>
+								<td>Writing</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>
+						<input type="submit" name="submit" value="register">
+					</td>
+					<td>
+						<input type="reset" name="submit" value="cancel">
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
