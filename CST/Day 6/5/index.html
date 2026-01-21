@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <title>Task 5</title>
+
+    <style>
+        body {
+            width: 600px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 48px;
+            margin: 20px auto;
+            border: 2px solid yellow;
+        }
+
+        .titlespan {
+            color: cyan;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            border: 4px solid yellow;
+            margin: 30px auto;
+        }
+
+        img {
+            width: 592px;
+            height: 300px;
+        }
+
+        .gamedescription {
+            font-size: 16px;
+            margin: 20px auto;
+        }
+
+        .inputContainer,
+        .outputContainer {
+            text-align: center;
+            display: flex;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .inputContainer span {
+            margin-right: 20px;
+            background-color: green;
+            padding: 10px;
+        }
+
+        .outputContainer span {
+            margin-right: 20px;
+            background-color: blue;
+            padding: 10px;
+        }
+
+        .inputbox p,
+        .outputbox p {
+            font-size: 12px;
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            display: block;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .inputArray {
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 24px;
+        }
+
+        .outputArray {
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title"><span class="titlespan">Bottle</span> Game</h1>
+
+    <div class="imgcontainer">
+        <img src="./0.jpg" alt="Slideshow Image" class="slideimg">
+    </div>
+
+    <p class="gamedescription">Write a function that take an array of persons' names and return two random names of
+        them.</p>
+
+    <div class="inputContainer">
+        <span>Input</span>
+        <div class="inputbox">
+            <p>array</p>
+            <p class="inputArray"></p>
+        </div>
+    </div>
+
+    <div class="outputContainer">
+        <span>Output</span>
+        <div class="outputbox">
+            <p>array</p>
+            <p class="outputArray"></p>
+        </div>
+    </div>
+
+
+    <script>
+        var inputArray = ["Ahmed", "Islam", "Sandra", "Fatma", "Mohamed"];
+
+        function getRandomNames(arr) {
+            var randomIndex = function () {
+                return Math.floor(Math.random() * 5);
+            }
+            var firstName = arr[randomIndex()];
+            var secondName = arr[randomIndex()];
+            while (firstName === secondName) {
+                secondName = arr[randomIndex()];
+            }
+            return [firstName, secondName];
+        }
+        document.querySelector(".inputArray").innerHTML = inputArray;
+        document.querySelector(".outputArray").innerHTML = getRandomNames(inputArray);
+    </script>
+</body>
+
+</html>

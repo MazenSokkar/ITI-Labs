@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Message</title>
+
+    <script>
+        var message = "Your Message Will Be Displayed Character by Character.";
+        var index = 0;
+        window.onload = function characterWriter() {
+            if (index < message.length) {
+                document.body.innerHTML += message.charAt(index);
+                index++;
+                setTimeout(characterWriter, 100);
+            } else {
+                document.body.innerHTML += "<br> this window will be terminated soon....";
+                setTimeout(() => {
+                    window.close();
+                }, 3000);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

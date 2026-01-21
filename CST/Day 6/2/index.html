@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Task 2</title>
+    <script>
+        var countArr = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+
+        setInterval(function () {
+            if (countArr.length === 0) {
+                window.close();
+            }
+            var count = countArr.shift();
+            document.body.style.backgroundImage = 'url(./' + count + '.jpg)';
+            document.querySelector("p").innerText = count;
+        }, 3000);
+
+    </script>
+
+    <style>
+        body {
+            font-size: 48px;
+            text-align: center;
+            margin: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+</body>
+
+</html>

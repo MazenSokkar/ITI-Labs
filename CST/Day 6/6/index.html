@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>
+        Task 6
+    </title>
+
+    <style>
+        .input {
+            margin: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="welcome.html " method="get">
+        <div class="input">
+            <label for="username">Enter Your Name:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div class="input">
+            <label for="age">Enter Your Age:</label>
+            <input type="text" id="age" name="age">
+        </div>
+        <div class="input">
+            <label for="gender">Select Your Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">
+                <img src="./gender-male.svg">
+            </label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">
+                <img src="./female-gender-sign.svg">
+            </label>
+        </div>
+        <div class="input">
+            <label for="favcolor">Select Your Favorite Color:</label>
+            <select name="favcolor" id="favcolor">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+            </select>
+        </div>
+
+        <div class="input">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>

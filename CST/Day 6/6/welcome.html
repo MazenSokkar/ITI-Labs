@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        welcome
+    </title>
+
+    <script>
+        var q = location.search;
+        if (location.search.length == 0) {
+            document.write("<h1>No Data Found</h1>");
+        } else {
+            var username = q.split("&")[0].split("=")[1];
+            var age = q.split("&")[1].split("=")[1];
+            var gender = q.split("&")[2].split("=")[1];
+            var favcolor = q.split("&")[3].split("=")[1];
+
+            if (gender === "male") {
+                document.write("<img src='./gender-male.svg' width='200px' height='200px'>");
+            } else {
+                document.write("<img src='./female-gender-sign.svg' width='200px' height='200px'>");
+            }
+            document.write("<h1>Welcome <span style='color:" + favcolor + "'>" + username + "</span></h1>");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
