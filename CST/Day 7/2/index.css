@@ -1,0 +1,53 @@
+body {
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1{
+    color: brown;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.task-input{
+    margin-bottom: 40px;
+}
+
+.task-input input {
+    width: 600px;
+    height: 40px;
+    padding-left: 10px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    margin-right: 30px;
+    box-shadow: 3px 3px 3px brown;
+}
+
+.task-input button {
+    width: 70px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: gray;
+    font-size: 14px;
+    color: white;
+}
+
+table {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+th{
+    color: white;
+    background-color: brown;
+}
+
+td {
+    text-align: center;
+    color: brown;
+}

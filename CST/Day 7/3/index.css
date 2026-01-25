@@ -1,0 +1,19 @@
+body {
+    margin: 20px;
+}
+
+p {
+    width: 600px;
+}
+
+table , td{
+    border: 2px solid black;
+}
+
+td {
+    align-content: start;
+}
+
+.headlabel {
+    font-weight: bold;
+}

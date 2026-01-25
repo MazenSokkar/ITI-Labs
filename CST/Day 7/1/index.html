@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>
+        Task 1
+    </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="types">
+        <label id="mainLabel" for="types">News Type:</label>
+        <div class="option">
+            <input type="radio" value="sport" name="types">
+            <label for="sport">Sport</label>
+        </div>
+        <div class="option">
+            <input type="radio" value="social" name="types">
+            <label for="social">Social</label>
+        </div>
+        <div class="option">
+            <input type="radio" value="politic" name="types">
+            <label for="politic">Politic</label>
+        </div>
+    </div>
+
+    <div class="add">
+        <input type="text" name="news" id="news" placeholder="add here">
+        <button>Add</button>
+    </div>
+
+    <div class="search">
+        <label for="search">Search:</label>
+        <input type="text" name="search" id="search" placeholder="enter news you want to search about">
+    </div>
+
+    <div class="news">
+        <table>
+            <tr>
+                <th>News</th>
+                <th>Type</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
