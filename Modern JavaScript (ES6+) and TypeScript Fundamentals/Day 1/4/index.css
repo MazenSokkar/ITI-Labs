@@ -1,0 +1,17 @@
+body {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.field {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.field input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+}

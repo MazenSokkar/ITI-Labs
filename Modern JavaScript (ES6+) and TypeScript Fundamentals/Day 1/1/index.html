@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>
+        Task 1
+    </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form action="server.html" method="get">
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter you full name">
+        </div>
+        <div class="field">
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="se">Select</option>
+                <option value="eg">Egypt</option>
+                <option value="sa">Saudi</option>
+                <option value="gr">Germany</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="zip">Zip:</label>
+            <input type="text" name="zip" id="zip">
+        </div>
+        <div class="field">
+            <label for="mail">E-Mail:</label>
+            <input type="text" name="mail" id="mail">
+        </div>
+        <div class="field" id="checkboxfields">
+            <label for="hoppies" id="hoppieslabel">Hoppies:</label>
+            <div>
+                <input type="checkbox" id="writing" name="hoppies" value="writing">
+                <label for="writing">writing</label>
+            </div>
+            <div>
+                <input type="checkbox" id="reading" name="hoppies" value="reading">
+                <label for="reading">reading</label>
+            </div>
+            <div>
+                <input type="checkbox" id="swimming" name="hoppies" value="swimming">
+                <label for="swimming">swimming</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sleeping" name="hoppies" value="sleeping">
+                <label for="sleeping">sleeping</label>
+            </div>
+        </div>
+        <div class="field">
+            <input type="submit" name="register" id="register" value="Register">
+        </div>
+        <div class="field">
+            <input type="reset" name="clear" id="clear" value="Clear">
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
