@@ -93,7 +93,7 @@ submitButton.addEventListener("click", function (e){
             if(mailInput.parentElement.children[(mailInput.parentElement.children).length - 1].nodeName === "SPAN"){
                 mailInput.parentElement.children[(mailInput.parentElement.children).length - 1].remove();
             }
-            mailInput.parentElement.insertAdjacentHTML("beforeend", '<span>You Must select a country</span>');
+            mailInput.parentElement.insertAdjacentHTML("beforeend", '<span>You Must enter a valid Email example@example.com</span>');
 
             if(document.querySelector("#checkboxfields>span") != null)
             {
@@ -135,7 +135,7 @@ clearButton.addEventListener('click', function(e){
 });
 
 function isValidName(){
-    return /^[A-Za-z]+$/.test(nameInput.value)
+    return /^[A-Za-z ]+$/.test(nameInput.value.trim())
 }
 
 function isEmailValid() {
