@@ -1,0 +1,25 @@
+body {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.names, .details {
+    background-color: gray;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+span {
+    padding: 10px;
+    background-color: lightblue;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+li{
+    text-align: start;
+}

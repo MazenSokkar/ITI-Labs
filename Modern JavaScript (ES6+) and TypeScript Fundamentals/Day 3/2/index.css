@@ -1,0 +1,70 @@
+body{
+    margin: 10px auto;
+    padding: 0;
+    background-color: gray;
+    text-align: center;
+}
+.mainwrapper {
+    display: none;
+    margin: 0px auto;
+}
+
+.mainCountry, .neighborCountry {
+    background-color: white;
+    width: 400px;
+    border-radius: 15px;
+    height: 600px;
+    display: inline-block;
+    margin: 20px;
+    text-align: start;
+}
+
+.neighborCountry {
+    transform: scale(0.8);
+}
+
+img{
+    width: 400px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+}
+
+#countryName {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+#countryReg {
+    margin-top: 0;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+label {
+    padding-left: 45px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#countryPop {
+    display: inline-block;
+    color: gray;
+    font-size: 20px;
+}
+
+#countryLang {
+    display: inline-block;
+    color: gray;
+    font-size: 20px;
+}
+
+#countryCur {
+    display: inline-block;
+    color: gray;
+    font-size: 20px;
+}
