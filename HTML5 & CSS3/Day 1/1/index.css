@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px auto;
+}
+
+mark {
+    background-color: red;
+}
+
+mark:hover {
+    background: linear-gradient(red, yellow);
+}
+
+mark:active {
+    background: radial-gradient(cyan 40%, green 80%);
+}
+
+.maincontent{
+    width: 80%;
+    margin: 0px auto;
+    height: 600px;
+    padding: 1%;
+    border: 4px solid yellow;
+    border-radius: 30px;
+    background: radial-gradient(circle, white 40%, #31D7AD 100%);
+    box-shadow: #FE87F0 20px 20px 20px, #FE87F0 -3px -3px 20px , black 1px 1px 20px inset;
+    transition: all 1s;
+    text-align: center;
+}
+
+.maincontent:hover{
+    transform: skew(10deg);
+    box-shadow: #31D7AD 20px 20px 20px, #31D7AD -3px -3px 20px , black 1px 1px 20px inset;
+}
+
+.maincontent:active{
+    transform: scale(0.7);
+    box-shadow: orange 20px 20px 20px, orange -3px -3px 20px, black 1px 1px 20px inset;
+}
+
+.textsection {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 30%;
+    height: 95%;
+    padding: 1%;
+    margin-right: 1%;
+    overflow-x: auto;
+    column-count: 3;
+    column-rule: 2px solid red;
+    border: 5px solid black;
+    border-radius: 30px;
+    background: radial-gradient(circle, white 40%, #91D841 100%);
+    resize: both;
+}
+
+.textsection:hover {
+    text-decoration: underline;
+}
+
+.imgsection {
+    vertical-align: top;
+    padding: 1%;
+    display: inline-block;
+    width: 60%;
+    height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 5px solid blue;
+    border-radius: 30px;
+    background: radial-gradient(circle, white 20%, #31D7AD 80%);
+    resize: both;
+}
+
+img{
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+    border: 3px solid blue;
+    box-shadow: #FE87F0 7px 7px 10px;
+    transition: all 1s;
+}
+
+img:hover {
+    border: 5px double blue;
+    box-shadow: yellow 7px 7px 10px;
+    transform: scale(1.2);
+}
+
+img:active {
+    position: absolute;
+    z-index: 1;
+    transform: scale(4);
+    box-shadow: red 7px 7px 10px;
+    border: none;
+}
+
+@media all and (orientation:portrait) {
+    .maincontent {
+        padding: auto;
+    }
+    .maincontent:hover {
+        padding: 5px;
+        transform: none;
+        box-shadow: #FE87F0 20px 20px 20px, #FE87F0 -3px -3px 20px, black 1px 1px 20px inset;
+    }
+    
+    .maincontent:active {
+        transform: none;
+        box-shadow: #FE87F0 20px 20px 20px, #FE87F0 -3px -3px 20px, black 1px 1px 20px inset;
+    }
+
+    mark {
+        background-color: blue;
+    }
+
+    .textsection {
+        width: 25%;
+        column-rule: none;
+        border: 5px double pink;
+        margin-right: 5%;
+    }
+
+    .imgsection {
+        width: 40%;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        box-shadow: blue 7px 7px 10px;
+        transition: all 1s;
+        transform: rotate(30deg);
+    }
+
+    img:hover {
+        z-index: 1;
+    }
+
+    img:active {
+        z-index: 1;
+        transform: scale(1.2);
+        position: relative;
+        box-shadow: orange 7px 7px 10px;
+        border: 3px dashed blue;
+    }
+}
