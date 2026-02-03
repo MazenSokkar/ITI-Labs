@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 20vw;
+    height: 20vh;
+    border: 2px solid black;
+    margin: 1rem;
+}
+
+.divwrapper {
+    width: auto;
+    height: 100%;
+    margin: 0;
+}
+
+.divwrapper:hover{
+    transform: scale(1.1);
+}
+
+@keyframes divRotation {
+    0% {
+        transform: translate(0, 0);
+        background-color: orange;
+    }
+
+    25% {
+        transform: translate(calc(90vw - 120%), 0);
+        background-color: green;
+    }
+
+    50% {
+        transform: translate(calc(90vw - 120%), calc(80vh - 120%));
+        background-color: lightblue;
+    }
+
+    75% {
+        transform: translate(0, calc(80vh - 120%));
+        background-color: lightyellow;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        background-color: orange;
+    }
+}
+
+@keyframes divScaleColor {
+    0% {
+        background-color: orange;
+    }
+
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: lightblue;
+    }
+
+    75% {
+        background-color: lightyellow;
+    }
+
+    100% {
+        background-color: orange;
+    }
+}
+
+/* @keyframes divRotation {
+    0% {
+        margin-top: 0;
+        margin-left: 0;
+        background-color: orange;
+    }
+
+    25% {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: 0;
+        background-color: green;
+    }
+
+    50% {
+        margin-top: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        background-color: lightblue;
+    }
+
+    75% {
+        margin-top: auto;
+        margin-left: 0;
+        margin-right: auto;
+        background-color: lightyellow;
+    }
+} */
+
+/* @keyframes divRotation {
+    0% {
+        align-self: flex-start;
+        justify-self: flex-start;
+        background-color: orange;
+    }
+    25% {
+        align-self: flex-start;
+        justify-self: flex-end;
+        background-color: green;
+    }
+    50% {
+        align-self: flex-end;
+        justify-self: flex-end;
+        background-color: lightblue;
+    }
+    75% {
+        align-self: flex-end;
+        justify-self: flex-start;
+        background-color: lightyellow;
+    }
+} */
+
+.animationBox {
+    width: 90vw;
+    height: 80vh;
+    border: 2px solid black;
+    margin: 1rem auto;
+}
+
+.div1 {
+    border: none;
+    background-color: orange;
+    transition: all 5s;
+}
+
+/* .div2 {
+    grid-area: green;
+    background-color: green;
+    margin: auto;
+}
+
+.div3 {
+    grid-area: blue;
+    background-color: #00B0F0;
+    margin: auto;
+}
+
+.div4 {
+    grid-area: yellow;
+    background-color: lightyellow;
+    margin: auto;
+} */
+
+.buttons {
+    width: 80vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    margin: 1rem auto;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #00B0F0;
+    border: 1px solid black;
+    color: white;
+    width: 8em;
+}

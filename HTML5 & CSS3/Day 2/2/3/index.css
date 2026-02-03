@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --iticolor: rgb(114, 19, 19);
+}
+
+ul {
+    /*background-color:yellow;*/
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 10vh;
+    align-items: center;
+}
+
+ul>li {
+    list-style: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+    font: bold 15px verdana;
+    color: var(--iticolor);
+}
+
+ul>li>a:hover {
+    color: rgb(182 115 115);
+}
+
+.intro {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/laptop_top.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.intro>h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+
+.intro>button {
+    padding: 1rem 2rem;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+    border-color: white;
+    background-color: transparent;
+    color: white; 
+    font-weight: bold;
+    margin: 1rem;
+    transition: all 0.5s;
+}
+
+.intro>button:hover {
+    background-color: var(--iticolor);
+}
+
+.locations {
+    margin: 2rem;
+    text-align: center;
+}
+
+.title{
+    margin-bottom: 2rem;
+}
+
+.title h2 {
+    color: var(--iticolor);
+    padding-bottom: 0.5rem;
+    font-size: 38px;
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title p {
+    color: gray;
+    font-size: 20px;
+}
+
+.location-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.map img {
+    width: 20vw;
+    margin-right: 2rem;
+}
+
+.locationnames {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.locationnames p{
+    background-color: #F5F5F5;
+    text-align: start;
+    width: 18rem;
+    height: 4rem;
+    /* color: #325064; */
+    font-weight: bold;
+    border-radius: 0.1rem;
+}
+
+.locationnames p:nth-child(1){
+    /* color: var(--iticolor); */
+}
+
+.checks {
+    margin: 1rem;
+}
+
+.checks span {
+    margin-right: 0.5rem;
+}
+
+.footer {
+    background-color: #20232A;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100vw;
+    color: white;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.contact {
+    margin: 4rem;
+}
+
+.contact h3,.follow p  {
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+}
+
+.contact p {
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.follow {
+    margin: 4rem;
+}
+
+.socialIcons>img {
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 0.2em;
+    background-color: white;
+}
+
+
+@media all and (orientation:portrait) {
+    .map img {
+        width: 50vw;
+        margin-bottom: 2rem;
+    }
+
+    .locationnames {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact, .follow {
+        margin: 2rem;
+    }
+}
