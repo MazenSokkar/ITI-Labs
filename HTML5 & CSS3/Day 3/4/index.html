@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Caculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="mainWrapper">
+        <section class="add">
+            <label for="operationAdd">Addition:</label>
+            <div class="operationAdd">
+                <input type="number" id="numberone" min="0" value="0">
+                +
+                <input type="number" id="numbertwo" min="0" value="0">
+                =
+                <output id="additionOutput" for="numberone numbertwo"></output>
+            </div>
+        </section>
+
+        <section class="multi">
+            <label for="=operationMul">Multi:</label>
+            <div class="operationMul">
+                <input type="number" id="numberthree" min="0" value="0">
+                *
+                <input type="number" id="numberfour" min="0" value="0">
+                =
+                <output id="multiOutput" for="numberfour numberthree"></output>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

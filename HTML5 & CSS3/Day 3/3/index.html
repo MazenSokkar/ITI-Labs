@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="mainWrapper">
+        <section class="top">
+            <button onclick="displayMap(event)">
+                Display Map
+            </button>
+            <button onclick="showDetailedInfo(event)">
+                Detailed Information
+            </button>
+        </section>
+
+        <section class="bottom">
+            <div id="map">
+
+            </div>
+            <div class="detailed">
+                <label for="lat">Lat (Degree)</label>
+                <output id="lat" for="lat"></output>
+                <label for="long">Long (Degree)</label>
+                <output id="long" for="long"></output>
+                <label for="acc">Accuracy (m)</label>
+                <output id="acc" for="acc"></output>
+                <label for="time">TimeStamp (Current Time and Date)</label>
+                <output id="time" for="time"></output>
+            </div>
+        </section>
+    </div>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB90FxtYG_ybAYXGkz0ybkmkboE2nEbezI"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
